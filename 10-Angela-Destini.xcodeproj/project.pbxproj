@@ -13,6 +13,8 @@
 		D7F18D01298EDA5D00695AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F18CFF298EDA5D00695AE1 /* Main.storyboard */; };
 		D7F18D03298EDA6400695AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F18D02298EDA6400695AE1 /* Assets.xcassets */; };
 		D7F18D06298EDA6400695AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F18D04298EDA6400695AE1 /* LaunchScreen.storyboard */; };
+		D7F18D5C298EDF2200695AE1 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F18D5A298EDF2200695AE1 /* StoryBrain.swift */; };
+		D7F18D5D298EDF2200695AE1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F18D5B298EDF2200695AE1 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D7F18D02298EDA6400695AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7F18D05298EDA6400695AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7F18D07298EDA6400695AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F18D5A298EDF2200695AE1 /* StoryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		D7F18D5B298EDF2200695AE1 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		D7F18CF8298EDA5C00695AE1 /* 10-Angela-Destini */ = {
 			isa = PBXGroup;
 			children = (
+				D7F18D58298EDED600695AE1 /* Controller */,
 				D7F18CF9298EDA5C00695AE1 /* AppDelegate.swift */,
 				D7F18CFB298EDA5C00695AE1 /* SceneDelegate.swift */,
-				D7F18CFD298EDA5C00695AE1 /* ViewController.swift */,
 				D7F18CFF298EDA5D00695AE1 /* Main.storyboard */,
 				D7F18D02298EDA6400695AE1 /* Assets.xcassets */,
 				D7F18D04298EDA6400695AE1 /* LaunchScreen.storyboard */,
 				D7F18D07298EDA6400695AE1 /* Info.plist */,
+				D7F18D59298EDF2200695AE1 /* Model */,
 			);
 			path = "10-Angela-Destini";
+			sourceTree = "<group>";
+		};
+		D7F18D58298EDED600695AE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7F18CFD298EDA5C00695AE1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7F18D59298EDF2200695AE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7F18D5A298EDF2200695AE1 /* StoryBrain.swift */,
+				D7F18D5B298EDF2200695AE1 /* Story.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F18D5C298EDF2200695AE1 /* StoryBrain.swift in Sources */,
 				D7F18CFE298EDA5C00695AE1 /* ViewController.swift in Sources */,
 				D7F18CFA298EDA5C00695AE1 /* AppDelegate.swift in Sources */,
 				D7F18CFC298EDA5C00695AE1 /* SceneDelegate.swift in Sources */,
+				D7F18D5D298EDF2200695AE1 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
